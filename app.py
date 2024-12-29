@@ -3,7 +3,7 @@ import joblib
 import pandas as pd
 
 # --- Page configuration ---
-st.set_page_config(page_title="Water Potability Forecasting", layout="wide")
+st.set_page_config(page_title="Water Potability Prediction", layout="wide")
 
 # --- Loading of model ---
 @st.cache_resource
@@ -62,7 +62,7 @@ calcul = st.sidebar.button("Calcul")
 
 # --- Main Content ---
 st.markdown(
-    "<h2 style='text-align: center; color: white;'>Forecasting of the water potability</h2>",
+    "<h2 style='text-align: center; color: white;'>Prediction of the water potability</h2>",
     unsafe_allow_html=True,
 )
 
