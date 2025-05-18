@@ -3,12 +3,12 @@ import joblib
 import pandas as pd
 
 # --- Page configuration ---
-st.set_page_config(page_title="Water Potability Prediction", layout="wide")
+st.set_page_config(page_title="Water Potability Prediction",page_icon="💧", layout="wide")
 
 # --- Loading of model ---
 @st.cache_resource
 def loading_model():
-    return joblib.load("potability_model.pkl")
+    return joblib.load("models/potability_model.pkl")
 
 # Loading
 model = loading_model()

@@ -1,0 +1,26 @@
+# Model configuration
+model:
+  name: water_potability_rf
+  version: "1.0.0"
+  file_path: "models/potability_model.pkl"
+  features:
+    - ph
+    - Hardness
+    - Solids
+    - Chloramines
+    - Sulfate
+    - Conductivity
+    - Organic_carbon
+    - Trihalomethanes
+    - Turbidity
+
+# Data paths
+data:
+  raw: "data/raw/water_potability.csv"
+  processed: "../data/processed/water_potability_processed.csv"
+
+# Training parameters
+training:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
